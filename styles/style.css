@@ -450,8 +450,7 @@
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
-    width: 1024px;
-    padding-right: 40px;
+    width: 984px;
   }
 
   .what-section {
