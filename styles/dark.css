@@ -5,8 +5,49 @@
 */
 
 :root.theme-dark {
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: var(--black-bg);
+  --bg-text-color: #ff0070;
+  --font-color: #000028;
+  --h1-color: #db00ff;
+  --h1-shadow: 4px 4px 0px #ff0070;
+  --link-shadow: var(--link-shadow-dark);
+  --deco-color: var(--red);
+  --accent-color: var(--red);
+  --text-color: var(--black);
+  --rec-color: var(--red);
+  --title-decor: var(--black-title);
+  --exp-text-color: var(--exp-text-black);
+  --menu-color: #ff0070;
+  --border-pointer: #ff007066;
+  --rec-vision: inline;
+  --top-height: 30px;
+  --top-height-768px: 170px;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: var(--black-bg);
+    --bg-text-color: #ff0070;
+    --font-color: #000028;
+    --h1-color: #db00ff;
+    --h1-shadow: 4px 4px 0px #ff0070;
+    --link-shadow: var(--link-shadow-dark);
+    --deco-color: var(--red);
+    --accent-color: var(--red);
+    --text-color: var(--black);
+    --rec-color: var(--red);
+    --title-decor: var(--black-title);
+    --exp-text-color: var(--exp-text-black);
+    --menu-color: #ff0070;
+    --border-pointer: #ff007066;
+    --rec-vision: inline;
+    --top-height: 30px;
+    --top-height-768px: 170px;
+  }
 }
