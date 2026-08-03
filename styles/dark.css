@@ -21,7 +21,7 @@
   --menu-color: #ff0070;
   --border-pointer: #ff007066;
   --rec-vision: inline;
-  --top-height: 30px;
+  --top-height: 36px;
   --top-height-768px: 170px;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -47,7 +47,7 @@
     --menu-color: #ff0070;
     --border-pointer: #ff007066;
     --rec-vision: inline;
-    --top-height: 30px;
+    --top-height: 36px;
     --top-height-768px: 170px;
   }
 }

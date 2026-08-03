@@ -35,7 +35,6 @@
 
 .header__theme-menu-list {
   display: grid;
-  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -56,7 +55,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--menu-color);
+  outline: 1px solid var(--menu-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -72,8 +71,9 @@
 /*Настройки rec, title, decorate zone (mobile)*/
 .rec {
   display: var(--rec-vision);
-  margin-right: 30px;
-  margin-top: 5px;
+  margin-right: 25px;
+  margin-top: 1px;
+  padding-right: 4px;
 }
 
 .rec::before {
@@ -81,7 +81,7 @@
   font-weight: normal;
   color: var(--rec-color);
   margin-top: 10px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .rec::after {
@@ -100,8 +100,8 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
   text-shadow: var(--h1-shadow);
-  letter-spacing: 4px;
-  padding: 42px 0px 40px 10px;
+  letter-spacing: 1px;
+  padding: 42px 0px 45px 10px;
 }
 
 .decorated-zone::before {
@@ -150,9 +150,16 @@
   color: var(--title-decor);
   font-size: var(--regular-font-size);
   font-weight: bold;
-  font-size: inherit;
-  letter-spacing: 1px;
+  line-height: 23.4px;
   padding-top: 40px;
+}
+
+.what-question {
+  padding-top: 50px;
+}
+
+.how-question {
+  padding-top: 50px;
 }
 
 .title-answer {
@@ -198,28 +205,28 @@
 }
 
 /*Настройки галереи (mobile)*/
+.pic-question {
+  margin-top: 50px;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-}
-
-.image-gallery {
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  min-height: 1366px;
+  margin-bottom: 30px;
 }
 
 .item-gallery {
-  margin: 0 0 10px 0;
   padding: 0;
   list-style-type: none;
 }
 
 .image-gallery {
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 10px;
+  gap: 0px;
   padding-bottom: 10px;
 }
 
@@ -230,7 +237,12 @@
   display: grid;
   align-content: center;
   justify-items: center;
-  padding-bottom: 20px;
+}
+
+.footer-title {
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 23px;
 }
 
 /* Развертывание под 768px разрешение */
@@ -240,7 +252,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     justify-self: start;
     align-self: center;
-    padding: 0px 0px 120px 0px;
+    padding: 0px 0px 130px 0px;
     grid-column: 1;
     grid-row: 2;
   }
@@ -259,7 +271,7 @@
 
   .header__theme-menu {
     padding-right: 20px;
-    padding-top: var(--top-height-768px);
+    padding-top: 167px;
     grid-column: 1;
     grid-row: 1;
   }
@@ -270,17 +282,22 @@
 
   .rec {
     margin-right: 40px;
+    padding-right: 0px;
     grid-column: 1;
     grid-row: 1;
   }
 
   /*Настройки основной секции (tablet)*/
   .section {
-    padding-top: 60px;
+    padding-top: 41px;
   }
 
   .why-section {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .why-question {
+    padding-top: 20px;
   }
 
   .what-section {
@@ -291,6 +308,7 @@
   .how-section {
     grid-template-columns: 1fr 2fr;
     padding-top: 80px;
+    padding-bottom: 30px;
   }
 
   .why-answer {
@@ -301,12 +319,24 @@
   .question {
     width: 236px;
     justify-self: start;
+  }
+
+  .what-question {
     padding-top: 0px;
   }
 
   .what-answer {
     width: 728px;
     justify-self: start;
+  }
+
+  .how-question {
+    padding-top: 0px;
+  }
+
+  .how-answer {
+    width: 472px;
+    justify-self: end;
   }
 
   .up-title {
@@ -318,6 +348,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    min-height: 780px;
+    padding-bottom: 30px;
+  }
+
+  .image-gallery {
+    padding-bottom: 0px;
+  }
+
+  .pic-question {
+    margin-bottom: 18px;
   }
 
   .sunset {
@@ -346,8 +386,14 @@
   }
 
   /*Настройки футера (tablet)*/
+  .footer {
+    min-height: 1024px;
+  }
+
   .footer-title {
     justify-self: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
 
@@ -374,6 +420,7 @@
 
   .header__theme-menu-list {
     grid-auto-flow: column;
+    gap: 10px;
   }
 
   .header-text {
@@ -382,7 +429,7 @@
   }
 
   .main-title {
-    padding-bottom: 90px;
+    padding-bottom: 0px;
     padding-top: 60px;
     align-self: center;
   }
@@ -404,6 +451,30 @@
     grid-auto-flow: column;
     gap: 20px;
     width: 1024px;
-    padding-right: 20px;
+    padding-right: 40px;
+  }
+
+  .what-section {
+    padding-top: 60px;
+  }
+
+  .how-section {
+    padding-top: 55px;
+  }
+
+  .how-question {
+    padding-top: 0px;
+  }
+
+  .how-answer {
+    width: 649px;
+  }
+
+  .footer {
+    min-height: 768px;
+  }
+
+  .footer-title {
+    padding-top: 0px;
   }
 }
