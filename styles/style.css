@@ -158,6 +158,10 @@
 
 .text-answer {
   margin-bottom: 10px;
+  color: var(--exp-text-color);
+  font-size: 18px;
+  font-weight: normal;
+  font-family: var(--project-font), sans-serif;
 }
 
 .what-question {
@@ -174,13 +178,6 @@
   font-size: var(--regular-font-size);
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.text-answer {
-  color: var(--exp-text-color);
-  font-size: 18px;
-  font-weight: normal;
-  font-family: var(--project-font), sans-serif;
 }
 
 .down-title {
