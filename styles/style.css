@@ -6,7 +6,7 @@
   background-color: var(--bg-color);
   background-size: cover;
   background-attachment: fixed;
-  font-family: var(--project-font);
+  font-family: var(--project-font), sans-serif;
   font-weight: bold;
   font-size: var(--regular-font-size);
   line-height: 1.3;
@@ -29,18 +29,19 @@
 
 .header__theme-menu {
   display: grid;
-  padding-right: 11px;
+  padding-right: 10px;
   padding-top: var(--top-height);
 }
 
 .header__theme-menu-list {
   display: grid;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
-  padding: 4px 13px;
-  margin-bottom: 5px;
-  color: var(--menu-color);
+  width: 70px;
+  min-height: 26px;
+  color: var(--stroke-color);
   font-weight: 400;
   background-color: inherit;
   border: none;
@@ -54,14 +55,15 @@
 }
 
 .header__theme-menu-button_active {
+  border: 1px solid transparent;
   pointer-events: none;
-  outline: 1px solid var(--menu-color);
+  outline: 1px solid var(--stroke-color);
 }
 
 .header__theme-menu-button:focus-visible {
   border: none;
   outline: none;
-  border-bottom: 1px solid var(--menu-color);
+  border-bottom: 1px solid var(--stroke-color);
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
@@ -71,16 +73,16 @@
 /*Настройки rec, title, decorate zone (mobile)*/
 .rec {
   display: var(--rec-vision);
-  margin-right: 25px;
-  margin-top: 1px;
-  padding-right: 4px;
+  position: absolute;
+  right: 28px;
+  top: 12px;
 }
 
 .rec::before {
   content: "REC";
   font-weight: normal;
   color: var(--rec-color);
-  margin-top: 10px;
+  top: 10px;
   margin-right: 10px;
 }
 
@@ -91,17 +93,17 @@
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--rec-color);
-  margin-top: 7px;
+  top: 7px;
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
 .main-title {
-  color: var(--h1-color);
+  color: var(--title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
-  text-shadow: var(--h1-shadow);
+  text-shadow: var(--shadow);
   letter-spacing: 1px;
-  padding: 42px 0px 45px 10px;
+  padding: 70px 0px 35px 10px;
 }
 
 .decorated-zone::before {
@@ -109,8 +111,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: var(--deco-border) solid var(--red);
-  border-right: var(--deco-border) solid var(--red);
+  border-top: var(--deco-border) solid var(--stroke-color);
+  border-right: var(--deco-border) solid var(--stroke-color);
   top: var(--decore-gap);
   right: var(--decore-gap);
 }
@@ -120,8 +122,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: var(--deco-border) solid var(--red);
-  border-left: var(--deco-border) solid var(--red);
+  border-bottom: var(--deco-border) solid var(--stroke-color);
+  border-left: var(--deco-border) solid var(--stroke-color);
   left: var(--decore-gap);
   bottom: var(--decore-gap);
 }
@@ -154,12 +156,16 @@
   padding-top: 40px;
 }
 
+.text-answer {
+  margin-bottom: 10px;
+}
+
 .what-question {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .how-question {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .title-answer {
@@ -174,7 +180,7 @@
   color: var(--exp-text-color);
   font-size: 18px;
   font-weight: normal;
-  font-family: var(--project-font);
+  font-family: var(--project-font), sans-serif;
 }
 
 .down-title {
@@ -206,7 +212,7 @@
 
 /*Настройки галереи (mobile)*/
 .pic-question {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .gallery {
@@ -264,6 +270,7 @@
 
   .header-text {
     width: 364px;
+    min-height: 117px;
     grid-column: 1;
     grid-row: 2;
     align-self: end;
@@ -271,18 +278,18 @@
 
   .header__theme-menu {
     padding-right: 20px;
-    padding-top: 167px;
+    padding-top: 169px;
     grid-column: 1;
     grid-row: 1;
   }
 
   .header__theme-menu-list {
-    gap: 0px;
+    gap: 10px;
   }
 
   .rec {
-    margin-right: 40px;
-    padding-right: 0px;
+    right: 39px;
+    top: 1px;
     grid-column: 1;
     grid-row: 1;
   }
@@ -302,12 +309,12 @@
 
   .what-section {
     grid-template-columns: 1fr;
-    padding-top: 80px;
+    padding-top: 69px;
   }
 
   .how-section {
     grid-template-columns: 1fr 2fr;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 30px;
   }
 
@@ -358,6 +365,7 @@
 
   .pic-question {
     margin-bottom: 18px;
+    margin-top: 40px;
   }
 
   .sunset {
@@ -406,14 +414,17 @@
   }
 
   .header__theme-menu {
+    position: absolute;
+    bottom: 723px;
     justify-self: center;
     padding-right: 0px;
     grid-column: 1;
     grid-row: 1;
-    padding-top: 0px;
   }
 
   .rec {
+    right: 39px;
+    top: 1px;
     grid-column: 1;
     grid-row: 1;
   }
@@ -430,7 +441,7 @@
 
   .main-title {
     padding-bottom: 0px;
-    padding-top: 60px;
+    padding-top: 90px;
     align-self: center;
   }
 
@@ -438,6 +449,10 @@
   .question {
     width: 314.96px;
     justify-self: start;
+    padding-top: 10px;
+  }
+
+  .why-question {
     padding-top: 20px;
   }
 
@@ -448,7 +463,7 @@
 
   .what-answer {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 984px;
   }
@@ -458,7 +473,7 @@
   }
 
   .how-section {
-    padding-top: 55px;
+    padding-top: 70px;
   }
 
   .how-question {
@@ -467,6 +482,10 @@
 
   .how-answer {
     width: 649px;
+  }
+
+  .pic-question {
+    margin-top: 40px;
   }
 
   .footer {

@@ -6,20 +6,19 @@
 
 :root.theme-light {
   --bg-image: url("../images/cover-image-light.png");
-  --bg-color: var(--white-bg);
-  --bg-text-color: #ff8dcb;
-  --h1-color: #ffc2e6;
-  --h1-shadow: 4px 4px 0px #ff8dcb;
-  --link-shadow: var(--link-shadow-light);
-  --accent-color: var(--pink);
-  --text-color: var(--white-theme-black);
-  --title-decor: var(--white-title);
-  --exp-text-color: var(--exp-text-white);
-  --menu-color: #353430;
+  --bg-color: #fff1f7;
+  --title-color: #ffc2e6;
+  --shadow: 4px 4px 0px #ff8dcb;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --title-decor: #353430;
+  --exp-text-color: #353430;
+  --stroke-color: #353430;
   --border-pointer: #32312d66;
   --rec-vision: none;
-  --top-height: 60px;
+  --top-height: 62px;
   --top-height-768px: 170px;
+  --deco-border: 1px;
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -30,19 +29,18 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
-    --bg-color: var(--white-bg);
-    --bg-text-color: #ff8dcb;
-    --h1-color: #ffc2e6;
-    --h1-shadow: 4px 4px 0px #ff8dcb;
-    --link-shadow: var(--link-shadow-light);
-    --accent-color: var(--pink);
-    --text-color: var(--white-theme-black);
-    --title-decor: var(--white-title);
-    --exp-text-color: var(--exp-text-white);
-    --menu-color: #353430;
+    --bg-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --shadow: 4px 4px 0px #ff8dcb;
+    --accent-color: #ff8dcb;
+    --text-color: #353430;
+    --title-decor: #353430;
+    --exp-text-color: #353430;
+    --stroke-color: #353430;
     --border-pointer: #32312d66;
     --rec-vision: none;
-    --top-height: 60px;
+    --top-height: 62px;
     --top-height-768px: 170px;
+    --deco-border: 1px;
   }
 }
