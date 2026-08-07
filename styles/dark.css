@@ -17,7 +17,7 @@
   --stroke-color: #ff0070;
   --border-pointer: #ff007066;
   --rec-vision: inline;
-  --top-height: 9.5vh;
+  --top-height: 72px;
   --top-height-768px: 170px;
   --deco-border: 1px;
   /* сохраните этот селектор в приведённом виде.
@@ -40,7 +40,7 @@
     --stroke-color: #ff0070;
     --border-pointer: #ff007066;
     --rec-vision: inline;
-    --top-height: 9.5vh;
+    --top-height: 72px;
     --top-height-768px: 170px;
     --deco-border: 1px;
   }

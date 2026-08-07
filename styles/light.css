@@ -16,7 +16,7 @@
   --stroke-color: #353430;
   --border-pointer: #32312d66;
   --rec-vision: none;
-  --top-height: 62px;
+  --top-height: 72px;
   --top-height-768px: 170px;
   --deco-border: 1px;
 
@@ -39,7 +39,7 @@
     --stroke-color: #353430;
     --border-pointer: #32312d66;
     --rec-vision: none;
-    --top-height: 62px;
+    --top-height: 72px;
     --top-height-768px: 170px;
     --deco-border: 1px;
   }

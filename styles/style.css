@@ -23,7 +23,6 @@
   position: relative;
   align-items: start;
   justify-items: end;
-  padding: var(--decore-gap) 0;
   padding-bottom: 55px;
 }
 
@@ -48,6 +47,7 @@
   font-size: var(--regular-font-size);
   text-transform: lowercase;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button:focus {
@@ -74,26 +74,25 @@
 .rec {
   display: var(--rec-vision);
   position: absolute;
-  right: 28px;
-  top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: var(--decore-gap);
+  right: calc(var(--decore-gap) + 10px);
 }
 
 .rec::before {
   content: "REC";
-  font-weight: normal;
-  color: var(--rec-color);
-  top: 10px;
-  margin-right: 10px;
+  color: var(--accent-color);
+  font-weight: 400;
 }
 
 .rec::after {
   content: "";
-  position: absolute;
-  inline-size: 9px;
-  block-size: 9px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background-color: var(--rec-color);
-  top: 7px;
+  background: var(--rec-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
@@ -134,7 +133,6 @@
   font-weight: bold;
   font-size: inherit;
   margin: var(--decore-gap);
-  min-height: 117px;
 }
 
 /*Настройки основной секции (mobile)*/
@@ -267,7 +265,6 @@
 
   .header-text {
     width: 364px;
-    min-height: 117px;
     grid-column: 1;
     grid-row: 2;
     align-self: end;
@@ -275,20 +272,13 @@
 
   .header__theme-menu {
     padding-right: 20px;
-    padding-top: 169px;
+    padding-top: 190px;
     grid-column: 1;
     grid-row: 1;
   }
 
   .header__theme-menu-list {
     gap: 10px;
-  }
-
-  .rec {
-    right: 39px;
-    top: 1px;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   /*Настройки основной секции (tablet)*/
@@ -315,7 +305,8 @@
     padding-bottom: 30px;
   }
 
-  .why-answer {
+  .why-answer,
+  .how-answer {
     width: 472px;
     justify-self: end;
   }
@@ -336,11 +327,6 @@
 
   .how-question {
     padding-top: 0px;
-  }
-
-  .how-answer {
-    width: 472px;
-    justify-self: end;
   }
 
   .up-title {
@@ -411,19 +397,10 @@
   }
 
   .header__theme-menu {
+    padding-top: 19px;
     position: absolute;
-    bottom: 723px;
     justify-self: center;
     padding-right: 0px;
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .rec {
-    right: 39px;
-    top: 1px;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   .header__theme-menu-list {
@@ -433,12 +410,11 @@
 
   .header-text {
     width: 491px;
-    min-height: 71px;
   }
 
   .main-title {
     padding-bottom: 0px;
-    padding-top: 90px;
+    padding-top: 110px;
     align-self: center;
   }
 
@@ -453,7 +429,8 @@
     padding-top: 20px;
   }
 
-  .why-answer {
+  .why-answer,
+  .how-answer {
     width: 648.92px;
     justify-self: end;
   }
@@ -475,10 +452,6 @@
 
   .how-question {
     padding-top: 0px;
-  }
-
-  .how-answer {
-    width: 649px;
   }
 
   .pic-question {
