@@ -17,7 +17,7 @@
   --exp-text-color: #f1b2ce;
   --stroke-color: #ff0070;
   --border-pointer: #ff007066;
-  --rec-vision: inline;
+  --rec-vision: flex;
   --top-height: 9.5vh;
   --top-height-768px: 170px;
   --deco-border: 1px;

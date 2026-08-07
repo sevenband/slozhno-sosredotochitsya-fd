@@ -43,7 +43,6 @@
   color: var(--stroke-color);
   font-weight: 400;
   background-color: inherit;
-  border: none;
   font-size: var(--regular-font-size);
   text-transform: lowercase;
   cursor: pointer;
@@ -74,7 +73,6 @@
 .rec {
   display: var(--rec-vision);
   position: absolute;
-  display: flex;
   align-items: center;
   gap: 10px;
   top: var(--decore-gap);
