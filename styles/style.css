@@ -51,6 +51,7 @@
 
 .header__theme-menu-button:focus {
   outline: none;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
@@ -62,6 +63,7 @@
 .header__theme-menu-button:focus-visible {
   border: none;
   outline: none;
+  border: 1px solid transparent;
   border-bottom: 1px solid var(--stroke-color);
 }
 
@@ -211,7 +213,6 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 1366px;
   margin-bottom: 30px;
 }
 
@@ -284,7 +285,8 @@
     padding-top: 41px;
   }
 
-  .why-section {
+  .why-section,
+  .how-section {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -298,7 +300,6 @@
   }
 
   .how-section {
-    grid-template-columns: 1fr 2fr;
     padding-top: 70px;
     padding-bottom: 30px;
   }
@@ -336,7 +337,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    min-height: 780px;
     padding-bottom: 30px;
   }
 
@@ -442,6 +442,10 @@
 
   .what-section {
     padding-top: 60px;
+  }
+
+  .answer {
+    min-width: 315px;
   }
 
   .how-section {
