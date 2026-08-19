@@ -303,8 +303,7 @@
     padding-bottom: 30px;
   }
 
-  .why-answer,
-  .how-answer {
+  .block-answer {
     width: 472px;
     justify-self: end;
   }
@@ -426,8 +425,7 @@
     padding-top: 20px;
   }
 
-  .why-answer,
-  .how-answer {
+  .block-answer {
     width: 648.92px;
     justify-self: end;
   }
@@ -436,7 +434,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 984px;
+    width: 100%;
   }
 
   .what-section {
